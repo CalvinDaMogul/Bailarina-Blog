@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <div
     style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
+      background: '#f5f5f5',
+      marginBottom: '3rem',
+      borderBottom: '2px solid #e6e6e6',
     }}
   >
     <div
@@ -15,15 +16,14 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+      <h1 style={{margin: 0, textAlign: 'center',fontSize: '18px'}}>
+        <Link to="/"
           style={{
-            color: 'white',
+            color: 'black',
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          Bailarina Blog
         </Link>
       </h1>
     </div>
@@ -31,3 +31,15 @@ const Header = ({ siteTitle }) => (
 )
 
 export default Header
+const Sidebar = (props) => (
+<div
+    style={{
+      border: '2px solid #e6e6e6',
+      maxWidth: 960,
+      padding: '0.5rem',
+      marginBottom: '25px'
+    }}
+    >
+    <strong>{props.title}.</strong> {props.description}
+</div>
+);

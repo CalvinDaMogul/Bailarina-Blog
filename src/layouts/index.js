@@ -4,8 +4,8 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
-import "../styles/layout-overide.css";
-import './index.css'
+// import './index.css'
+// import "../styles/layout-overide.css";
 
 const Layout = ({ children, data }) => (
   <div>
